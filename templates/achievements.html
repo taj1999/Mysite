@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+      {% load static %} 
+ {% block content %}
+<style>
+    
+    #background 
+	 {
+		opacity: 0.3;
+		filter:alpha(opacity=80);
+	}       
+      
+	 .centered 
+	 {
+		  position: absolute;
+		  text-align: justify;
+		  opacity: 1;
+		  color: DarkBlue;
+		  font-size: 20px;
+		  top: 220%;
+		  left: 50%;
+		  
+		  transform: translate(-50%, -50%);
+		  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	} 
+    body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 20px;
+        background-color: #fdfdfd;
+		
+    }
+    .head_text{
+    color: white;
+  }
+  
+  .carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+ h3{
+ color: FireBrick;
+ font-size: 30px;
+ }
+ </style>
+
+    <header class="masthead" >
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                  <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Hi, I am Trishala ! </h3>
+                   <p class = "text-white">These are few of my achievements and other activities in last three years </p>
+                </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </header>
+      <div > 
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<div class="centered">
+	
+	
+	<br><br>
+	<h3 ><b> 1. Internship Details  </b></h3>
+	<br>
+	<p align=”justify” ><b>I have completed a 3 months course-cum-internship program in Machine Learning at Verzeo Edutech. During internship 
+	I completed two projects under the guidance of mentor. The minor project was based on data visualization using 
+	python libraries matplotlib and seaborn to expose the best combination for strategy games available in the appstore 
+	in order to get a good user rating . The major project was based on Machine Learning supervised classification for Customer Fraud Detection.</b></p>
+	<br><br>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+	<li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={% static 'blog/images/internship certificate.jpg' %} width="700" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/Course Completion Certificate.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/Cognitive Class ML0101ENv3 Certificate _ Cognitive Class-page-001.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/AI Certificate-page-001.jpg' %} width="700" height="500">
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<br><br><br><br>
+	<h3 ><b>2. Competitive Programming Achievements  </b></h3>
+	<br>
+	<p align=”justify” ><b>1. Selected as finalist at Techgig Geek Goddess 2019, ranked 177 among 7300+ participants. 
+	<a href="https://www.techgig.com/geekgoddess/finalelist">See proof</a> </b></p>
+	<p align=”justify” ><b>2. Finalist in Coding Contest ‘Battle of Codes’ organized by ACSES at WCE Sangli. 
+	<a href={% static 'blog/images/img012.jpg' %}>See certificate</a> </b></p>
+	<p align=”justify” ><b>3. Hackerearth December Cicuits 2019 global rank – 55/6270.
+	<a href="https://www.hackerearth.com/challenges/competitive/december-circuits-19/leaderboard/page/2/">See proof</a> </b></p>
+	<p align=”justify” ><b>4. Highest rating 1762 (3 star) on Codechef.
+	<a href="https://www.codechef.com/users/taj1999">See profile</a> </b></p>
+	<br><br><br><br>
+	
+	<h3 ><b>3. Certificates of Participation in various online coding contests </b></h3>
+	<br><br>
+	<div id="demo1" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+    <li data-target="#demo1" data-slide-to="1"></li>
+	<li data-target="#demo1" data-slide-to="2"></li>
+	<li data-target="#demo1" data-slide-to="3"></li>
+	<li data-target="#demo1" data-slide-to="4"></li>
+	<li data-target="#demo1" data-slide-to="5"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={% static 'blog/images/codestrike-page-001.jpg' %} width="700" height="600">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/codewar-oct19-page-001.jpg' %} width="700" height="600">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/coding challenge2-page-001.jpg' %} width="700" height="600">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/img011.jpg' %} width="700" height="600">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/Tower of Code-page-001.jpg' %} width="700" height="600">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/img013.jpg' %} width="700" height="600">
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo1" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	
+</div>
+</div>
+		         
+{%endblock%}

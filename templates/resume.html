@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+      
+ {% block content %}
+<style>
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text{
+    color: white;
+  }
+.out {    
+    padding-left:200px;
+    padding-right:340px;
+    padding-top:70px;
+}
+.in { 
+    
+    border-style: solid;
+}
+p{
+  font-size : 33px;
+}
+    
+    
+  }
+ </style>
+
+    <header class="masthead" >
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                  <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Hi, I am Trishala ! </h3>
+                   <p class = "text-white" >This is my Resume</p>
+                    
+                </div>
+                
+                    </div>
+                  </div>
+                  
+                </div>
+                
+            </div>
+              </header>
+            <div class="out">
+    <div class="in">
+        <img src= "{% static 'blog/images/RESUME.jpg' %}" alt="Resume" width = 800px height = 1300px align='center'/>
+    </div>
+</div>
+      
+{%endblock%}

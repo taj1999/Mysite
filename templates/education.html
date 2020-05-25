@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+     {% load static %} 
+ {% block content %}
+<style>
+    
+    
+  #background 
+	 {
+		opacity: 0.3;
+		filter:alpha(opacity=80);
+	}       
+      
+	 .centered 
+	 {
+		  position: absolute;
+		  text-align: justify;
+		  opacity: 1;
+		  color: DarkBlue;
+		  font-size: 22px;
+		  top: 120%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	} 
+    body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+		
+    }
+    .head_text{
+    color: white;
+  }
+  
+  .carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+ h3{
+ color: FireBrick;
+ font-size: 30px;
+ }
+ </style>
+
+    <header class="masthead" >
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                  <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Hi, I am Trishala ! </h3>
+                   <p class = "text-white">Here are my Educational Details</p>
+                </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </header>
+	<div > 
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<div class="centered">
+		<br><br><b>Lets have a look at my Academic Details!</b>
+	
+	<br><br><br>
+	<h3 ><b>1.Secondary Examination (Class X) </b></h3>
+	<br>
+	<p align=”justify” ><b>I have completed SSC from CBSE Board in 2014-15 at Jawahar Navodaya Vidyalaya, Satara. I have 
+	achieved second rank in the school by scoring 92.2% marks with CGPA 9.8.</b></p>
+	
+	<a href={% static 'blog/images/result 10th.jpg' %}>Click here to see the marklist</a>
+	<br><br><br>
+	<h3 ><b>2.Senior Secondary Examination (Class XII) </b></h3>
+	<br>
+	<p align=”justify” ><b>I have completed HSC from CBSE Board in 2016-17 at Jawahar Navodaya Vidyalaya, Satara. I have 
+	achieved First rank in the school by scoring aggregate 93.2% marks and 95% marks in PCMB (Physics, Chemistry, Maths and Biology).</b></p>
+	
+	<a href={% static 'blog/images/result 12th.jpg' %}>Click here to see the marklist</a>
+	
+	<br><br><br>
+	<h3 ><b>3. B.Tech. Computer Science and Engineering </b></h3>
+	<br>
+	<p align=”justify” ><b>Currently I'm pursuing B.Tech in CSE from Walchand College of Engineering Sangli. I have achieved 
+	Second rank in the department in First and Second year of B.Tech by scoring CPI 9.83 and 9.79 respectively.</b></p>
+	
+	<a href={% static 'blog/images/FY result.jpg' %}>Click here to see the First year result</a>
+	<br>
+	<a href={% static 'blog/images/result.jpg' %}>Click here to see the Second year result</a>
+	<br><br>
+	
+</div>
+</div>
+		 
+{%endblock%}

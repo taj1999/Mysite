@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+ {% load static %}
+ {% block content %}
+<style>
+   #background 
+	 {
+		opacity: 0.5;
+		filter:alpha(opacity=80);
+	}       
+      
+	 .centered 
+	 {
+		  position: absolute;
+		  text-align: center;
+		  opacity: 1;
+		  color: DarkBlue;
+		  font-size: 24px;
+		  top: 180%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	} 
+    body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+		
+    }
+    .head_text{
+    color: white;
+  }
+  
+  .carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+ h3{
+ color: FireBrick;
+ font-size: 30px;
+ }
+ </style>
+
+    <header class="masthead" >
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                  <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Hi, I am Trishala ! </h3>
+                   <p class = "text-white">This are my projects.</p>
+                </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </header>
+	<div > 
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<img  id = "background" src={% static 'blog/images/blog2.jpg' %} class="mx-auto d-block" style="width:100%">
+		<div class="centered">
+		<br><br><b>Lets have a nice visit to my projects!</b>
+	
+	<br><br><br>
+	<h3 ><b>Project 1. Image Completion using Generative Adversarial Networks </b></h3>
+	<br>
+	<p align=”justify” ><b>Implemented Generative Adversarial Networks to fill up the missing and corrupted parts of face images and 
+	other general images by context aware image impainting. </b></p>
+	<br>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+	<li data-target="#demo" data-slide-to="5"></li>
+	<li data-target="#demo" data-slide-to="6"></li>
+	<li data-target="#demo" data-slide-to="7"></li>
+	<li data-target="#demo" data-slide-to="8"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={% static 'blog/images/1.jpg' %} width="700" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/2.jpg' %} width="700" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/3.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/4.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/5.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/6.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/7.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/8.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/9.jpg' %} width="700" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<br><br><br><br>
+	<h3 ><b>Project 2. Malware Detection in Portable Executable Files using Machine Learning </b></h3>
+	<br>
+	<p align=”justify” ><b>Implemented a machine learning approach for classifying any unseen .exe file as malicious or
+	legitimate by analyzing PE header data. Results of six ML models were compared - Decision Tree, Random Forest, 
+	SVM, KNN, Adaptive Boosting and Gradient Boosting. Gradient Boosting achieved highest accuracy of 98.53%.</b></p>
+	<br>
+	<div id="demo1" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+    <li data-target="#demo1" data-slide-to="1"></li>
+    <li data-target="#demo1" data-slide-to="2"></li>
+	<li data-target="#demo1" data-slide-to="3"></li>
+	<li data-target="#demo1" data-slide-to="4"></li>
+	<li data-target="#demo1" data-slide-to="5"></li>
+	<li data-target="#demo1" data-slide-to="6"></li>
+	<li data-target="#demo1" data-slide-to="7"></li>
+	<li data-target="#demo1" data-slide-to="8"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={% static 'blog/images/11.jpg' %} width="700" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/12.jpg' %} width="700" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src={% static 'blog/images/13.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/14.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/15.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/16.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/17.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/18.jpg' %} width="700" height="500">
+    </div>
+	<div class="carousel-item">
+      <img src={% static 'blog/images/19.jpg' %} width="700" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo1" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+		</div>
+		</div> 
+{%endblock%}
